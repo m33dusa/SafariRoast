@@ -4,7 +4,266 @@
 
 <meta name="coffee"
 content="African coffee farmers and ethical coffee farming">
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi|Major+Mono+Display|Staatliches|indie+flower|Josefin+sans|Lobster|pacifico|Righteous|Permanent+Marker|Coiny|Amatic+SC|Kalam");
 
+body {
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/11/23/178621/479f84218acc954d0add41852c86092a.jpg");
+  border: 10px none black;
+}
+
+/*header*/
+header, #header-img {
+  border:5px none white;
+  text-align:center;
+  z-index:1;
+  position:static;
+  display:inline;
+  width:100%;
+  height:12em;
+  float:left;
+}
+
+@media (min-width:1200px){
+  header{
+    width:100%;
+  }
+  fieldset{
+    width:100%;
+  }
+}
+/*logo background and text*/
+.logo-img{
+  z-index:3;
+  font-family:Staatliches;
+  border:3px solid yellow;
+  text-align:center;
+  position:fixed;
+  letter-spacing:10px;
+  color:black;
+  border-radius:50%;
+  background:linear-gradient(to right, red, yellow, green);
+  font-size:20px;
+  width:180px;
+  height:180px;
+}
+
+/*logo parameter*/
+#logo{
+  display:inline;
+  position:relative;
+  border:3px none blue;
+  float:left;
+  width:20%;
+  height:150px;
+  z-index:0;
+}
+
+#nav-bar{
+ z-index:2;
+  border:3px none pink;
+  text-align:center;
+  font-size:20px;
+  width:70%;
+  height:150px;
+  float:left;
+}
+/*the options for nav bar*/
+a {
+  background:linear-gradient(to right, red, yellow, green);
+  border-radius:100%;
+  font-size:20px;
+  padding:10px 15px 10px 25px;
+  font-family:Baloo Thambi;
+  letter-spacing:8px;
+  float:center;
+  z-index:6;
+  display:inline;
+  position:relative;
+}
+
+a:hover {
+ color:green;
+ box-shadow:20px 10px 10px hsl(100,25%,20%);
+}
+
+#intro{
+  background:none;
+  border:none;}
+
+#style{
+    font-family:Roboto;
+    font-size:22px;
+    margin-bottom:-20px;
+  }
+
+/*fieldset for main content*/
+.quote {
+  z-index:0;
+  font-family:Lobster;
+  color:black;
+  font-size:40px;
+  text-align:center;
+  padding-bottom:-50px;
+  padding-right:50px;
+  padding-left:50px;
+}
+
+/*image circles*/
+#round, #roundA, #roundB, #roundC{
+ border-radius:60%;
+ box-shadow:25px 10px 10px HSL(210, 29%, 10%);
+ position:relative;
+ display:inline;
+ width:device-width;
+ float:center;
+}
+
+#circleOne, #circleTwo, circleThree, circleFour,.video{
+ z-index:1;
+ position:relative;
+ display:inline;
+ border:3px none yellow;
+ width:100%;
+ height:auto;
+ float:right;
+}
+
+/*formatting main images*/
+.cup {
+  display:block;
+  position:relative;
+  border:5px solid red;
+  width:100px;
+  height:100px;
+  margin-top:-100px;
+  float:right;
+}
+
+.farm{
+  width:200px;
+  height:200px;
+  float:right;
+  border:5px solid green;
+}
+
+/*About*/
+.context{
+ background:none;
+ margin-top:-30px;
+ -webkit-shape-outside:circle();
+ shape-outside:circle();
+}
+
+/*fonts*/
+h2{
+  text-align:left;
+  font-family:Arial;
+  font-size:30px;
+  color:black; 
+  word-spacing:5px;
+  margin:2rem;
+}
+
+fieldset{
+  border:none;
+  margin-top:3%;
+  padding-top:3%;
+  background:#F1FFFA;
+  overflow:scroll;
+  position:relative;
+}
+
+.price{
+  width:50%;
+  position:relative;
+  display:inline;
+}
+
+.video{
+ text-align:center;
+}
+
+.mockups{
+  width:45%;
+  position:relative;
+  display:inline;
+  float:left;
+}
+
+#brand, #brandB, #brandC, brandD{
+  position:relative;
+  display:inline;
+  font-size:25px;
+  color:Black;
+  letter-spacing:5px;
+  font-family:Permanent Marker;
+  background:#F1FFFA;
+  width:40%;
+  height:8em;
+  float:left;
+  margin-left:35px;
+}
+
+h4{
+  position:relative;
+  font-family:Arial;
+  font-size:20px;
+  text-align:left;
+  letter-spacing:2px;
+  margin-left:20px;
+}
+
+#form{
+ font-family:Roboto;
+ font-size:25px;
+ font-weight:bold;
+  overflow:visible;
+}
+
+#submit{
+  background-color:#FEF9E7;
+  width:14em;
+  height:50px;
+  border-radius:25px;
+  font-size:28px;
+  font-family:Aleo;
+  display:flex;
+  color:black;
+  margin-left:40%;
+  padding-left:150px;
+  margin-top:70px;
+  margin-bottom:50px;
+}
+
+#submit:hover{
+ color:green;
+ box-shadow:20px 10px 10px hsl(100,25%,20%);
+}
+
+#email{
+  width: 50%;
+  padding: 10px 10px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-left: 2%;
+  font-family:Roboto;
+  font-size:18px;
+}
+
+input:invalid {
+  box-shadow: 0 0 10px 1px red;
+}
+
+input:focus:invalid {
+  outline: red;
+}
+
+</style>
 <header id="header-img">
   <div class="logo-img">
     <img style="width:65%; margin-top:-8px; margin-left:-5px" alt="" src="https://www.tenvinilo.com/vinilos-decorativos/img/preview/vinilo-decorativo-taza-cafe-tonos-marron-1647.png"><br><strong>Safari<br>Roast</strong></div>
